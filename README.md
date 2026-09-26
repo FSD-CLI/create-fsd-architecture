@@ -1,5 +1,12 @@
 # create-fsd-architecture Agent Skill
 
+![Status: Beta](https://img.shields.io/badge/status-beta-f59e0b)
+
+> [!IMPORTANT]
+> This Agent Skill is in beta. Its CLI commands and installation flow are
+> verified, but agent behavior can vary across coding tools and existing project
+> structures. Review generated changes before committing them.
+
 Portable Agent Skill for the [`create-fsd-architecture`](https://www.npmjs.com/package/create-fsd-architecture) CLI.
 
 The skill teaches compatible coding agents how to inspect a project, translate
@@ -25,6 +32,17 @@ The CLI implementation remains in
 [`FSD-CLI/cli`](https://github.com/FSD-CLI/cli). This repository contains the
 portable Agent Skill only.
 
+## Beta status
+
+The current beta release is `v1.0.0-beta.1`.
+
+- Verified against `create-fsd-architecture` 2.6.0.
+- Installation tested with the `skills` CLI.
+- Intended for evaluation with Codex, Claude Code, Cursor, and other compatible
+  coding agents.
+- Feedback and reproducible issues are welcome in this repository's issue
+  tracker.
+
 ## Structure
 
 ```text
@@ -39,4 +57,3 @@ skills/
         ├── frameworks.md
         └── scaffolding.md
 ```
-

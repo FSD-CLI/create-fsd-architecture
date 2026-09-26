@@ -1,6 +1,6 @@
 ---
 name: fsd-cli
-description: Use create-fsd-architecture to scaffold supported Feature-Sliced Design projects and generate feature, entity, widget, or page slices. Trigger for requests to initialize a new FSD project, scaffold a feature or auth flow, create an entity, widget, or page, inspect an FSD CLI project, or safely check an upgrade. Inspect the project first and never invent an init, segment, or migration command the CLI does not provide.
+description: Beta skill for using create-fsd-architecture to scaffold supported Feature-Sliced Design projects and generate feature, entity, widget, or page slices. Trigger for requests to initialize a new FSD project, scaffold a feature or auth flow, create an entity, widget, or page, inspect an FSD CLI project, or safely check an upgrade. Inspect the project first and never invent an init, segment, or migration command the CLI does not provide.
 ---
 
 # FSD CLI
@@ -53,4 +53,3 @@ work.
 This skill complements the official Feature-Sliced Design guidance. It does not
 replace the methodology or decide ambiguous architectural ownership without
 project context.
-
