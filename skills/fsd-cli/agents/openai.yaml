@@ -1,0 +1,5 @@
+interface:
+  display_name: "FSD CLI"
+  short_description: "Scaffold FSD projects with the verified CLI"
+  default_prompt: "Use $fsd-cli to scaffold the requested Feature-Sliced Design structure with the real CLI."
+
