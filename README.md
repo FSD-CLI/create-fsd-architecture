@@ -57,3 +57,14 @@ skills/
         ├── frameworks.md
         └── scaffolding.md
 ```
+
+## Support FSD CLI
+
+If this project helps you, you can optionally support its development:
+
+- [GitHub Sponsors](https://github.com/sponsors/ashrafmo-1?frequency=one-time&sponsor=ashrafmo-1)
+- [Buy Me a Coffee](https://buymeacoffee.com/ashrafqopiah)
+- **InstaPay (Egypt):** `ashrafmo-1`
+
+For InstaPay, use the username exactly as shown and verify the recipient details
+in the app before confirming a transfer. Donations are optional.
