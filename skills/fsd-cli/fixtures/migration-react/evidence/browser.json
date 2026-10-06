@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-06T02:49:14.848Z",
+  "browser": "151.0.7922.34",
+  "results": [
+    {
+      "state": "before",
+      "catalogRoute": true,
+      "apiSuccess": true,
+      "cartAfterTwoClicks": 2,
+      "unknownRoute": true,
+      "apiFailure": true,
+      "pageErrors": []
+    },
+    {
+      "state": "batch1",
+      "catalogRoute": true,
+      "apiSuccess": true,
+      "cartAfterTwoClicks": 2,
+      "unknownRoute": true,
+      "apiFailure": true,
+      "pageErrors": []
+    },
+    {
+      "state": "after",
+      "catalogRoute": true,
+      "apiSuccess": true,
+      "cartAfterTwoClicks": 2,
+      "unknownRoute": true,
+      "apiFailure": true,
+      "pageErrors": []
+    },
+    {
+      "state": "rollback",
+      "catalogRoute": true,
+      "apiSuccess": true,
+      "cartAfterTwoClicks": 2,
+      "unknownRoute": true,
+      "apiFailure": true,
+      "pageErrors": []
+    }
+  ]
+}

@@ -22,5 +22,8 @@ upgrade, or create ownership manifests for unverified business code. A saved
 config does not make every file CLI-owned. Confirm a compatible FSD contract
 before generator dry-runs; managed upgrade only changes verified owned files.
 
-A dedicated migration planner, broad legacy fixtures and rollback acceptance
-remain Task 37. Do not claim those future capabilities shipped with this policy.
+Migration v1 is a Skill workflow with authorized incremental writes, not a new
+CLI command. Read [migration-workflow.md](migration-workflow.md) before executing
+it. The committed React/Vite fixture covers two batches and a fault-injected
+rollback. Its evidence does not certify every existing application or framework.
+A packaged CLI planner and broader legacy fixtures remain research.

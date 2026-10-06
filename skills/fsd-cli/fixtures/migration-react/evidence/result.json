@@ -1,0 +1,122 @@
+{
+  "date": "2026-10-06T02:46:02.236Z",
+  "node": "v24.21.0",
+  "templateCommit": "2f10a391e6677c739ceed3a5b030711d1fdf4454",
+  "scope": "Synthetic React/Vite legacy catalog, two guided batches; not cross-framework acceptance",
+  "workspace": "/tmp/fsd-decisions-migration-repro",
+  "states": [
+    {
+      "state": "before",
+      "commands": [
+        {
+          "command": "npm run lint",
+          "exit": 0
+        },
+        {
+          "command": "npm run typecheck",
+          "exit": 0
+        },
+        {
+          "command": "npm run build",
+          "exit": 0
+        },
+        {
+          "command": "cart/API assertions and import boundary/cycle validation",
+          "exit": 0
+        }
+      ],
+      "hashes": {
+        "src/Catalog.tsx": "446d32b74771bb56fceb96e908ccf9cde5339114de7178d61c268ae5706a5468",
+        "src/api.ts": "b45dd7e2c9512adca3c8f174715d2159d1beed1e2e390399b20ad74101bc244d",
+        "src/cart.ts": "4cb6ea3e57ef6d997d9b4edd61f5553eb9eb0917c1166970f7599ab07b38b28f",
+        "src/main.tsx": "ee8dc32f65cfc674618d1868c14b63dd1996b25abd037ae665f0699a0ff481b6",
+        "src/types.ts": "6c78f07fb7b4216410c28c1dbd6e3b02842d672733c967ae46f96b687c00a524"
+      }
+    },
+    {
+      "state": "batch1",
+      "commands": [
+        {
+          "command": "npm run lint",
+          "exit": 0
+        },
+        {
+          "command": "npm run typecheck",
+          "exit": 0
+        },
+        {
+          "command": "npm run build",
+          "exit": 0
+        },
+        {
+          "command": "cart/API assertions and import boundary/cycle validation",
+          "exit": 0
+        }
+      ],
+      "hashes": {
+        "src/Catalog.tsx": "8a71ed7398adedea449e5e1b5fd31bba4f7c4a1c7063a7b39a4521963fd74036",
+        "src/cart.ts": "4cb6ea3e57ef6d997d9b4edd61f5553eb9eb0917c1166970f7599ab07b38b28f",
+        "src/entities/product/api/fetch-products.ts": "9e787bfe4bd0046c633f920be3ff9586292feb8972a2a14dfc8b8b2cb84c858d",
+        "src/entities/product/index.ts": "4e87bb96de9c02700a2aecc25cfc2e550ec17e783899dbc217f43995600162cb",
+        "src/entities/product/model/product.ts": "6c78f07fb7b4216410c28c1dbd6e3b02842d672733c967ae46f96b687c00a524",
+        "src/main.tsx": "ee8dc32f65cfc674618d1868c14b63dd1996b25abd037ae665f0699a0ff481b6"
+      }
+    },
+    {
+      "state": "after",
+      "commands": [
+        {
+          "command": "npm run lint",
+          "exit": 0
+        },
+        {
+          "command": "npm run typecheck",
+          "exit": 0
+        },
+        {
+          "command": "npm run build",
+          "exit": 0
+        },
+        {
+          "command": "cart/API assertions and import boundary/cycle validation",
+          "exit": 0
+        }
+      ],
+      "hashes": {
+        "src/app/index.ts": "8731d29e9347a36d4131a7999156491741c880b2f9afdfe8e681eab81f4d6c44",
+        "src/app/routing/App.tsx": "ce99c7f43efd7525424713eb4b44cc3c3115822356b6c2f54f81d3bfa62d132d",
+        "src/entities/product/api/fetch-products.ts": "9e787bfe4bd0046c633f920be3ff9586292feb8972a2a14dfc8b8b2cb84c858d",
+        "src/entities/product/index.ts": "4e87bb96de9c02700a2aecc25cfc2e550ec17e783899dbc217f43995600162cb",
+        "src/entities/product/model/product.ts": "6c78f07fb7b4216410c28c1dbd6e3b02842d672733c967ae46f96b687c00a524",
+        "src/features/add-product/index.ts": "a2c4a3334ff88a09a2f45b3f7029bc93e11e7952e2f35f794d9c05a7c729ccee",
+        "src/features/add-product/model/add-product.ts": "4cb6ea3e57ef6d997d9b4edd61f5553eb9eb0917c1166970f7599ab07b38b28f",
+        "src/main.tsx": "17788b0c033638ec3a83639194bb62346ab1b19c13a482ced6453788f68f462e",
+        "src/pages/catalog/index.ts": "ffc8273efde5930b4f17e6cc5e8b01c5f75cb3a14010d1ac519741179f6fe332",
+        "src/pages/catalog/ui/CatalogPage.tsx": "fc7eab977cb94da0c1445842a8535f2abe74d3bd2ef3e739c0ea25e1c7876fff"
+      }
+    }
+  ],
+  "rollback": {
+    "injectedTypecheckExit": 2,
+    "restoredState": "batch1",
+    "restoredByteHashes": true,
+    "commands": [
+      {
+        "command": "npm run lint",
+        "exit": 0
+      },
+      {
+        "command": "npm run typecheck",
+        "exit": 0
+      },
+      {
+        "command": "npm run build",
+        "exit": 0
+      },
+      {
+        "command": "cart/API assertions and import boundary/cycle validation",
+        "exit": 0
+      }
+    ]
+  }
+}
