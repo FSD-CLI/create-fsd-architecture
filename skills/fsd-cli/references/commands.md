@@ -10,7 +10,7 @@ Use the published package through `npx` unless the project intentionally pins or
 invokes another installation:
 
 ```bash
-npx create-fsd-architecture@latest --help
+npx create-fsd-architecture@2.6.1 --help
 ```
 
 For reproducible automation, replace `latest` with the intended version.
@@ -40,7 +40,7 @@ Supported create options:
 Example:
 
 ```bash
-npx create-fsd-architecture@latest storefront \
+npx create-fsd-architecture@2.6.1 storefront \
   --framework nextjs \
   --package-manager pnpm \
   --yes \
@@ -50,7 +50,7 @@ npx create-fsd-architecture@latest storefront \
 Inspect a plan first when the target or stack choice is uncertain:
 
 ```bash
-npx create-fsd-architecture@latest storefront \
+npx create-fsd-architecture@2.6.1 storefront \
   --framework nextjs \
   --yes \
   --dry-run
@@ -66,11 +66,11 @@ create-fsd-architecture -g <type> <name> [--force] [--dry-run]
 The only valid types are `feature`, `entity`, `widget`, and `page`.
 
 ```bash
-npx create-fsd-architecture@latest -g feature cart --dry-run
-npx create-fsd-architecture@latest -g entity product
-npx create-fsd-architecture@latest -g widget site-header
-npx create-fsd-architecture@latest -g page checkout
-npx create-fsd-architecture@latest -g feature auth
+npx create-fsd-architecture@2.6.1 -g feature cart --dry-run
+npx create-fsd-architecture@2.6.1 -g entity product
+npx create-fsd-architecture@2.6.1 -g widget site-header
+npx create-fsd-architecture@2.6.1 -g page checkout
+npx create-fsd-architecture@2.6.1 -g feature auth
 ```
 
 Run generation from the project root. The generator reads `fsd.config.json`
@@ -84,9 +84,9 @@ or `model`.
 ## Inspect a project
 
 ```bash
-npx create-fsd-architecture@latest check
-npx create-fsd-architecture@latest doctor
-npx create-fsd-architecture@latest config
+npx create-fsd-architecture@2.6.1 check
+npx create-fsd-architecture@2.6.1 doctor
+npx create-fsd-architecture@2.6.1 config
 ```
 
 - `check` validates configuration, `package.json`, and the required FSD layers.
@@ -104,15 +104,15 @@ create-fsd-architecture upgrade [--dry-run] [--check] [--yes] [--no-install] [--
 Start with one of the read-only forms:
 
 ```bash
-npx create-fsd-architecture@latest upgrade --dry-run
-npx create-fsd-architecture@latest upgrade --check
+npx create-fsd-architecture@2.6.1 upgrade --dry-run
+npx create-fsd-architecture@2.6.1 upgrade --check
 ```
 
 Apply only a conflict-free plan:
 
 ```bash
-npx create-fsd-architecture@latest upgrade --yes
-npx create-fsd-architecture@latest upgrade --yes --no-install
+npx create-fsd-architecture@2.6.1 upgrade --yes
+npx create-fsd-architecture@2.6.1 upgrade --yes --no-install
 ```
 
 `--allow-dirty` permits apply after a warning; it does not reset, stash, commit,
@@ -122,10 +122,38 @@ with `--yes` or `--no-install`.
 ## Discovery and global options
 
 ```bash
-npx create-fsd-architecture@latest --list-templates
-npx create-fsd-architecture@latest --version
-npx create-fsd-architecture@latest --help
+npx create-fsd-architecture@2.6.1 --list-templates
+npx create-fsd-architecture@2.6.1 --version
+npx create-fsd-architecture@2.6.1 --help
 ```
 
-No other command names or aliases are currently implemented.
+No arbitrary-app init/migrate/add/plugin command is implemented in this baseline.
 
+
+## Candidate capability gate — absent from npm2.6.1
+
+CLI candidate d5a0bb1e464f2364593800deede428a957b5c32b contains the following.
+Use only after the user selects a reviewed checkout/installation and its actual
+help confirms support. Skill v2 does not upgrade the package automatically.
+
+```sh
+node /path/to/reviewed-cli/bin/index.mjs -g entity product customer --dry-run
+node /path/to/reviewed-cli/bin/index.mjs -g feature cart --segments ui,api --root src/lib
+node /path/to/reviewed-cli/bin/index.mjs -g shared --segments ui,lib --root src
+node /path/to/reviewed-cli/bin/index.mjs -g app --segments providers --root src
+node /path/to/reviewed-cli/bin/index.mjs -g feature auth --auth-provider supabase
+node /path/to/reviewed-cli/bin/index.mjs check --architecture
+```
+
+Native batch normalizes/preflights names and restores earlier affected output on
+failure; no batch --force. --segments is structure-only preserving creation of
+directories and empty TypeScript public APIs, not native components or routes.
+It accepts one comma-separated value; app/shared take no slice names. --root
+requires --segments and does not rewrite aliases/routes. --force and Supabase
+options cannot be combined with this mode. Names start with a lowercase letter
+and use lowercase letters/digits/hyphens; slice groups are outside this contract.
+
+--architecture runs only locally installed Steiger against the adapter source root
+and propagates its failure. It installs nothing. See auth-supabase.md for browser
+and SSR boundaries. If capabilities are absent, make narrowly scoped ordinary
+edits when authorized, or use existing local Steiger directly; never invent flags.

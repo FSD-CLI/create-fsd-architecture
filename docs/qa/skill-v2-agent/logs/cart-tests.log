@@ -1,0 +1,20 @@
+
+> test
+> node --test tests/*.test.mjs
+
+✔ success decodes controlled response and sends GET plus cancellation signal (10.081792ms)
+✔ HTTP failure exposes status without accepting response data (0.277334ms)
+✔ network failure has a stable error contract (0.098708ms)
+✔ malformed JSON rejects (0.162125ms)
+✔ malformed product quantities reject (0.394166ms)
+✔ empty cart succeeds (0.126042ms)
+✔ cancellation remains distinguishable (0.475125ms)
+✔ existing UI and consumer bytes survive; sentinel and CartView exports remain (1.315416ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 116.828333

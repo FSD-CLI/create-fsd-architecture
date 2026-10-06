@@ -1,0 +1,5 @@
+{
+  "valid": true,
+  "errors": [],
+  "scope": "Schema and local log consistency only; commands/assertions/remote sources are not executed or certified"
+}

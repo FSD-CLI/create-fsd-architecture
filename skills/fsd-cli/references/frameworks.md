@@ -49,3 +49,10 @@ generators do not ask again.
 Inspect the dry-run and the final diff instead of assuming identical files
 across frameworks.
 
+
+## Implementation guides
+
+Read only the guide matching the target: [React/Vite](frameworks/react-vite.md),
+[Next.js](frameworks/nextjs.md), [Vue/Vite](frameworks/vue-vite.md),
+[Nuxt](frameworks/nuxt.md), or [SvelteKit](frameworks/sveltekit.md). Existing source
+roots and route conventions take precedence over template defaults.

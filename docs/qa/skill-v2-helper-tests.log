@@ -1,0 +1,23 @@
+✔ inventory detects each supported framework without mistaking implementation dependencies (124.615125ms)
+✔ inventory protects secrets, script bodies and existing files (45.552042ms)
+✔ unknown/ambiguous frameworks and config mismatch remain visible (67.863958ms)
+✔ bounded workspace roots and multiple lockfiles are reported without choosing an app (23.783208ms)
+✔ invalid and symlink config inputs do not leak raw contents (44.597542ms)
+✔ literal import hints expose actual upward/cross-slice/deep boundaries (4.286625ms)
+✔ public APIs and same-layer Shared segments are not business cross-slice findings (3.232792ms)
+✔ unresolved/outside targets and symlinks limit import evidence without reading them (1.722541ms)
+✔ evidence supports executed success and expected negative results (1.005917ms)
+✔ contradictory, duplicate and fake unverified checks cannot pass (0.857333ms)
+✔ published claims require source identity and integrity (0.625041ms)
+✔ evidence rejects traversal and symlink logs (0.8375ms)
+✔ CLI helper errors are bounded and evidence validation never executes commands (128.776208ms)
+✔ all skill-local Markdown links resolve within the package (14.582541ms)
+✔ release and skill version metadata agree (0.454208ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 520.7505
