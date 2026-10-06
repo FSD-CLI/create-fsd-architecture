@@ -2,7 +2,7 @@
 name: fsd-cli
 description: Inspect, scaffold, implement, review, and incrementally migrate Feature-Sliced Design applications with create-fsd-architecture. Use for FSD project or slice work, architectural ownership decisions, auth integration, managed tooling upgrades, or release verification; preserve existing application behavior and verify the actual CLI capabilities before commands.
 metadata:
-  version: "2.0.0-beta.1"
+  version: "2.0.0"
 ---
 
 # FSD CLI — implementation skill

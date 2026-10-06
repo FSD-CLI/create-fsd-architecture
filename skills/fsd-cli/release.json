@@ -1,6 +1,6 @@
 {
-  "version": "2.0.0-beta.1",
-  "status": "beta",
+  "version": "2.0.0",
+  "status": "stable",
   "date": "2026-10-06",
   "cliBaseline": "2.6.1",
   "candidateCliCommit": "d5a0bb1e464f2364593800deede428a957b5c32b",

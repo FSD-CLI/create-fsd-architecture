@@ -1,9 +1,10 @@
 # create-fsd-architecture Agent Skill
 
-![Status: Beta](https://img.shields.io/badge/status-beta-f59e0b)
+![Status: Stable](https://img.shields.io/badge/status-stable-16a34a)
 
 > [!IMPORTANT]
-> This Agent Skill is in beta. Its CLI commands and installation flow are
+> This Agent Skill is stable for its documented instruction and helper scope.
+> Its CLI commands and installation flow are
 > verified, but agent behavior can vary across coding tools and existing project
 > structures. Review generated changes before committing them.
 
@@ -19,10 +20,10 @@ business implementation, architectural review and incremental migration.
 npx skills add FSD-CLI/create-fsd-architecture --skill fsd-cli
 ```
 
-That unpinned command follows the repository default branch. For the v2 beta tag:
+That unpinned command follows the repository default branch. For the stable v2 tag:
 
 ```bash
-npx skills@1.7.0 add https://github.com/FSD-CLI/create-fsd-architecture/tree/v2.0.0-beta.1/skills/fsd-cli --skill fsd-cli
+npx skills@1.7.0 add https://github.com/FSD-CLI/create-fsd-architecture/tree/v2.0.0/skills/fsd-cli --skill fsd-cli
 ```
 
 Installer 1.7.0 requires Node >=22.20.0. The dependency-free helpers support Node
@@ -46,9 +47,11 @@ The CLI implementation remains in
 [`FSD-CLI/cli`](https://github.com/FSD-CLI/cli). This repository contains the
 portable Agent Skill and read-only diagnostic helpers; it does not publish a CLI.
 
-## Beta status
+## Release status
 
-The current tagged beta release is `v2.0.0-beta.1`. Version 1 remains available.
+The current stable release is `v2.0.0`. Previous beta tags remain available.
+Stable refers to the documented workflows and helpers, not certification of all
+agent providers, arbitrary migrations, or live Supabase backends.
 The tag can be installed before the candidate branch merges; an unpinned install
 still follows main. See [changelog](CHANGELOG.md) and
 [v2 validation scope](docs/qa/SKILL-V2-VALIDATION.md).

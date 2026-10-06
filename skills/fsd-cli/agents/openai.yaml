@@ -1,4 +1,4 @@
 interface:
-  display_name: "FSD CLI v2 (Beta)"
+  display_name: "FSD CLI v2"
   short_description: "Implement and migrate FSD apps with verified tooling"
   default_prompt: "Use $fsd-cli to inspect this project and implement the requested FSD change with verified commands and relevant checks."

@@ -1,5 +1,15 @@
 # Agent Skill releases
 
+## 2.0.0 — 2026-10-06
+
+- Promote the documented v2 instruction/helper scope to stable after helper tests,
+  nine OS/Node CI jobs, independent agent exercises, and pinned installation checks.
+- Update version metadata, UI status, and pinned installation to the stable tag.
+- Keep the beta tags immutable and retain their release notes below.
+- No CLI npm release or helper/workflow behavior changes. Published CLI 2.6.1
+  remains the baseline. Broad provider/framework migration certification and
+  live Supabase staging remain outside verified release coverage.
+
 ## 2.0.0-beta.1 — 2026-10-06
 
 - Expand the skill from scaffold routing to implementation, domain decisions,
