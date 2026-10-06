@@ -1,6 +1,6 @@
 ---
 name: fsd-cli
-description: Beta skill for using create-fsd-architecture to scaffold supported Feature-Sliced Design projects and generate feature, entity, widget, or page slices. Trigger for requests to initialize a new FSD project, scaffold a feature or auth flow, create an entity, widget, or page, inspect an FSD CLI project, or safely check an upgrade. Inspect the project first and never invent an init, segment, or migration command the CLI does not provide.
+description: Beta skill for using create-fsd-architecture to scaffold supported Feature-Sliced Design projects and generate feature, entity, widget, or page slices. Trigger for requests to initialize a new FSD project, scaffold a feature or auth flow, create an entity, widget, or page, inspect an FSD CLI project, safely check an upgrade, or audit and guide incremental migration of an existing React/Vite, Next.js, Vue/Vite, Nuxt, or SvelteKit application. Inspect the project first and never invent an init, segment, or migration command the CLI does not provide.
 ---
 
 # FSD CLI
@@ -15,6 +15,9 @@ work.
 1. Inspect `package.json`, `fsd.config.json`, `.fsd/manifest.json`, the source
    tree, lockfiles, and existing slices before choosing an action.
 2. Identify whether the request targets a new project or an existing project.
+   For existing non-CLI applications, read
+   [references/existing-projects.md](references/existing-projects.md) and use the
+   supported audit/guided-migration workflow.
 3. Map the request to a supported operation. Read
    [references/scaffolding.md](references/scaffolding.md) for ambiguous intent.
 4. Read [references/commands.md](references/commands.md) before composing a CLI

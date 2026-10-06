@@ -10,7 +10,7 @@
 | `nuxt` | Nuxt | `app` | Creates `app/app/routes/<name>.vue` as a thin file-based route wrapper. |
 | `sveltekit` | SvelteKit | `src` | Creates `src/routes/<name>/+page.svelte` as a thin route wrapper. |
 
-Angular and other frameworks are not registered in 2.6.0. Do not include them
+Angular and other frameworks are not registered in 2.6.1. Do not include them
 in commands or examples.
 
 ## Detect the framework

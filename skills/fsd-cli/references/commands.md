@@ -1,6 +1,6 @@
 # Verified command reference
 
-This reference describes `create-fsd-architecture` 2.6.0. Recheck `--help`, the
+This reference describes `create-fsd-architecture` 2.6.1. Recheck `--help`, the
 installed version, and the repository before assuming a later release has the
 same contract.
 

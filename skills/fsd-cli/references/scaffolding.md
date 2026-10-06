@@ -63,9 +63,11 @@ asks to initialize FSD inside an existing application:
 
 1. Inspect whether it is already an FSD CLI project.
 2. Do not run project creation over the existing directory.
-3. Explain that in-place initialization is unsupported.
-4. Offer either a separately generated reference project or a careful manual
-   migration only when the user authorizes that approach.
+3. Explain the CLI has no in-place initialization command. Official audit and
+   guided migration support is described in [existing-projects.md](existing-projects.md).
+4. Audit and prepare a migration map, then perform incremental agent edits
+   within the user-authorized scope; use a separate generated reference project
+   only when it helps compare the target architecture.
 
 ## Unsupported requests
 

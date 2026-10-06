@@ -26,6 +26,7 @@ npx skills add FSD-CLI/create-fsd-architecture --skill fsd-cli
 - Generate the supported complete authentication feature scaffold.
 - Inspect project configuration and health.
 - Preview and apply safe CLI-owned upgrades.
+- Audit and guide incremental migration of existing non-CLI applications.
 - Keep unsupported commands and framework behavior explicit.
 
 The CLI implementation remains in
@@ -36,7 +37,11 @@ portable Agent Skill only.
 
 The current beta release is `v1.0.0-beta.1`.
 
-- Verified against `create-fsd-architecture` 2.6.0.
+- CLI contract rechecked against published `create-fsd-architecture@2.6.1` on 2026-10-06.
+- Published-package create, generate, doctor/check and generated builds passed
+  locally for React/Vite and Next.js with npm on macOS. This does not verify
+  every framework, package manager or agent integration.
+- [Canonical release and QA status](https://github.com/FSD-CLI/cli/blob/main/docs/RELEASE-STATUS.md).
 - Installation tested with the `skills` CLI.
 - Intended for evaluation with Codex, Claude Code, Cursor, and other compatible
   coding agents.
@@ -55,7 +60,8 @@ skills/
         ├── architecture-rules.md
         ├── commands.md
         ├── frameworks.md
-        └── scaffolding.md
+        ├── scaffolding.md
+        └── existing-projects.md
 ```
 
 ## Support FSD CLI
