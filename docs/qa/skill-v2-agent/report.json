@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "kind": "published",
+    "version": "2.6.1",
+    "integrity": "sha512-X1StMp1ytT0g1A8H/5b1ok8HN+5yRSIhoOAoG5w1g7Wz+HxFLRfE364QXrkxyRT35WEZJp9wNYL2qCt+2XAoRg==",
+    "gitHead": "4c83d0a75ec20117edc8880aba065bdb21edfa6d",
+    "commit": "4c83d0a75ec20117edc8880aba065bdb21edfa6d"
+  },
+  "environment": {
+    "node": "v24.21.0",
+    "platform": "darwin"
+  },
+  "checks": [
+    {
+      "id": "cli-version",
+      "command": [
+        "node",
+        "/tmp/fsd-skill-v2-agent-eval/tooling/node_modules/create-fsd-architecture/bin/index.mjs",
+        "--version"
+      ],
+      "cwd": "/tmp/fsd-skill-v2-agent-eval",
+      "exitCode": 0,
+      "log": "logs/cli-version.log",
+      "expectedExitCode": 0,
+      "outcome": "pass",
+      "assertions": [
+        "Installed CLI reports exactly 2.6.1"
+      ]
+    },
+    {
+      "id": "cli-help",
+      "command": [
+        "node",
+        "/tmp/fsd-skill-v2-agent-eval/tooling/node_modules/create-fsd-architecture/bin/index.mjs",
+        "--help"
+      ],
+      "cwd": "/tmp/fsd-skill-v2-agent-eval",
+      "exitCode": 0,
+      "log": "logs/cli-help.log",
+      "expectedExitCode": 0,
+      "outcome": "pass",
+      "assertions": [
+        "Help exposes no segment or Supabase provider flag"
+      ]
+    },
+    {
+      "id": "published-metadata",
+      "command": [
+        "npm",
+        "view",
+        "create-fsd-architecture@2.6.1",
+        "version",
+        "dist.integrity",
+        "gitHead",
+        "--json",
+        "--cache",
+        "/tmp/fsd-skill-v2-agent-eval/npm-cache"
+      ],
+      "cwd": "/tmp/fsd-skill-v2-agent-eval",
+      "exitCode": 0,
+      "log": "logs/published-metadata.log",
+      "expectedExitCode": 0,
+      "outcome": "pass",
+      "assertions": [
+        "Registry reports version, sha512 integrity and full gitHead for selected published artifact"
+      ]
+    },
+    {
+      "id": "next-file-reads",
+      "command": [
+        "python3",
+        "-c",
+        "from pathlib import Path;[(print(str(p)),print(p.read_text())) for p in sorted(Path('.').rglob('*')) if p.is_file()]"
+      ],
+      "cwd": "/tmp/fsd-skill-v2-agent-eval/next-review",
+      "exitCode": 0,
+      "log": "logs/next-file-reads.log",
+      "expectedExitCode": 0,
+      "outcome": "pass",
+      "assertions": [
+        "Read package, aliases, ordinary route, screens barrel and transitive product boundary"
+      ]
+    },
+    {
+      "id": "classification-reads",
+      "command": [
+        "python3",
+        "-c",
+        "from pathlib import Path;[(print(str(p)),print(p.read_text())) for p in sorted(Path('.').rglob('*')) if p.is_file()]"
+      ],
+      "cwd": "/tmp/fsd-skill-v2-agent-eval/classification",
+      "exitCode": 0,
+      "log": "logs/classification-reads.log",
+      "expectedExitCode": 0,
+      "outcome": "pass",
+      "assertions": [
+        "Product DTO owns business data; cart action has two screen consumers; Button has domain-independent props"
+      ]
+    },
+    {
+      "id": "cart-tests",
+      "command": [
+        "npm",
+        "test",
+        "--prefix",
+        "/tmp/fsd-skill-v2-agent-eval/react-cart"
+      ],
+      "cwd": "/tmp/fsd-skill-v2-agent-eval",
+      "exitCode": 0,
+      "log": "logs/cart-tests.log",
+      "expectedExitCode": 0,
+      "outcome": "pass",
+      "assertions": [
+        "Controlled success, HTTP, network, JSON, shape, empty and cancellation contract tests pass",
+        "Existing cart UI and consumer hashes remain unchanged; sentinel/public UI exports retain exact prefix"
+      ]
+    },
+    {
+      "id": "next-read-only-hashes",
+      "command": [
+        "python3",
+        "/tmp/fsd-skill-v2-agent-eval/check-read-only.py"
+      ],
+      "cwd": "/tmp/fsd-skill-v2-agent-eval",
+      "exitCode": 0,
+      "log": "logs/read-only-hashes.log",
+      "expectedExitCode": 0,
+      "outcome": "pass",
+      "assertions": [
+        "All nine Next fixture file hashes unchanged after architectural review"
+      ]
+    },
+    {
+      "id": "live-supabase",
+      "command": [
+        "not-executed",
+        "Supabase adapter unavailable in selected CLI baseline"
+      ],
+      "cwd": "/tmp/fsd-skill-v2-agent-eval",
+      "exitCode": null,
+      "expectedExitCode": null,
+      "outcome": "unverified",
+      "log": null,
+      "assertions": [
+        "No supported official Supabase adapter CLI operation exists in selected published baseline"
+      ]
+    }
+  ],
+  "limitations": [
+    "Synthetic local fixtures only; no deployed backend, UI browser check, Next build, or live Supabase acceptance",
+    "React fixture has no installed React/Vite compiler/typechecker; eight Node controlled-response tests are not TypeScript typecheck or bundle acceptance",
+    "Supabase adapter generation was not executed because 2.6.1 help and capability contract lack support; no reviewed candidate was selected",
+    "No authorized Supabase project, SDK installation, public configuration, callback/cookie integration, email templates or RLS policy evidence"
+  ]
+}

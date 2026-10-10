@@ -1,0 +1,50 @@
+package.json
+{
+  "name": "next-review-eval",
+  "private": true,
+  "dependencies": {
+    "next": "15.5.2",
+    "react": "19.1.0"
+  },
+  "scripts": {
+    "build": "next build"
+  }
+}
+
+src/app/catalog/page.tsx
+import { CatalogScreen } from '@/screens/catalog';
+export default function Page() { return <CatalogScreen />; }
+
+src/app/layout.tsx
+export default function RootLayout({children}: {children: React.ReactNode}) { return <html><body>{children}</body></html>; }
+
+src/entities/product/index.ts
+export { ProductCard } from './ui/ProductCard';
+export type { ProductDto } from './model/types';
+
+src/entities/product/model/types.ts
+export type ProductDto = { id: string; name: string };
+
+src/entities/product/ui/ProductCard.tsx
+import type { ProductDto } from '../model/types';
+export function ProductCard({product}: {product:ProductDto}) { return <article>{product.name}</article>; }
+
+src/screens/catalog/index.ts
+export { CatalogScreen } from './ui/CatalogScreen';
+
+src/screens/catalog/ui/CatalogScreen.tsx
+import { ProductCard } from '@/entities/product';
+export function CatalogScreen() { return <main><h1>Catalog</h1><ProductCard product={{id:'p1',name:'Book'}} /></main>; }
+
+tsconfig.json
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    }
+  }
+}
+

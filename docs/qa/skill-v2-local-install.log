@@ -1,0 +1,33 @@
+
+│
+●   codex  Agent detected — installing non-interactively
+[?25l│
+◇  Source: /Users/ashraf/FSD-Platform/create-fsd-architecture-skill
+[?25h[?25l│
+◇  Local path validated
+[?25h[?25l│
+◇  Found 1 skill
+[?25h│
+●  Selected 1 skill: fsd-cli
+
+│
+◇  Installation Summary ─────╮
+│                            │
+│  ./.agents/skills/fsd-cli  │
+│    copy → Codex            │
+│                            │
+├────────────────────────────╯
+[?25l│
+◇  Installation complete
+[?25h
+│
+◇  Installed 1 skill ────────────╮
+│                                │
+│  ✓ fsd-cli (copied)            │
+│    → ./.agents/skills/fsd-cli  │
+│                                │
+├────────────────────────────────╯
+
+│
+└  Done!  Review skills before use; they run with full agent permissions.
+

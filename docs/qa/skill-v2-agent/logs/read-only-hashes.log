@@ -1,0 +1,12 @@
+All 9 Next fixture files have identical before/after SHA256 hashes
+{
+  "next-review/package.json": "bd7c5632a7af0eaae064135c98fecf252e5ed478f587567f84cacebac5a4067d",
+  "next-review/src/app/catalog/page.tsx": "92b55a49348adec908d6a3ad1ab9b0fa2abe487746a7b13e80c309926be6443d",
+  "next-review/src/app/layout.tsx": "86ce2bfba437bcc96fc1aeb39b9a2c434fdda261a0aae95bf21c448b2eb1b964",
+  "next-review/src/entities/product/index.ts": "036e9b7ec3e8769a686e5f3bb786f4194b686eaa57131ec270dc4f98b94ee5de",
+  "next-review/src/entities/product/model/types.ts": "f3c925fc4cadf235e0df98802c4c0e38abf6c58abc931d8c2f44d25b114ad738",
+  "next-review/src/entities/product/ui/ProductCard.tsx": "a8dee52f493bd6deba1d4b47c70cfd7198b8e6489046b2ab0dbf658fbbc46ee3",
+  "next-review/src/screens/catalog/index.ts": "f39c417c564908f84b2778f5458098e5a90300376b1a1f83dc1c6f28c11a42be",
+  "next-review/src/screens/catalog/ui/CatalogScreen.tsx": "555774f656986d89c14b95f15a406f3e56a7a7221b0d95b7ec3438f4479c3e3e",
+  "next-review/tsconfig.json": "799748ae4c83c7767bd3f14629ea4d6d3d81b208a26260310ae422ff24185f90"
+}

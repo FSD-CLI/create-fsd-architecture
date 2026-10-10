@@ -1,0 +1,6 @@
+
+> fsd-architecture-starter@0.0.0 typecheck
+> tsc -b
+
+src/app/routing/App.tsx(5,7): error TS2322: Type 'number' is not assignable to type 'string'.
+src/app/routing/App.tsx(5,7): error TS6133: 'injectedFailure' is declared but its value is never read.

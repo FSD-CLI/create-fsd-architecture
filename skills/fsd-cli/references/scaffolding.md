@@ -63,9 +63,11 @@ asks to initialize FSD inside an existing application:
 
 1. Inspect whether it is already an FSD CLI project.
 2. Do not run project creation over the existing directory.
-3. Explain that in-place initialization is unsupported.
-4. Offer either a separately generated reference project or a careful manual
-   migration only when the user authorizes that approach.
+3. Explain the CLI has no in-place initialization command. Official audit and
+   guided migration support is described in [existing-projects.md](existing-projects.md).
+4. Audit and prepare a migration map, then perform incremental agent edits
+   within the user-authorized scope; use a separate generated reference project
+   only when it helps compare the target architecture.
 
 ## Unsupported requests
 
@@ -74,3 +76,11 @@ individual segments, deleting or renaming slices, or arbitrary migrations. Use
 ordinary code edits when appropriate and clearly distinguish them from CLI
 output.
 
+
+## Preserving additions and batches
+
+For an existing slice do not retry native generation with force. On published
+2.6.1 use narrow manual edits for a segment-only addition, preserving its public
+API. A reviewed later candidate can use --segments; read commands.md first.
+Native batch requires its own capability gate. Custom --root is structure-only
+and cannot perform safe alias/route adaptation of native framework output.

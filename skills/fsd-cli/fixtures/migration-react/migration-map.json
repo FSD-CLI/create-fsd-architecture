@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "framework": "react-vite",
+  "sourceRoot": "src",
+  "baseline": "before",
+  "batches": [
+    {
+      "id": "product",
+      "entries": [
+        {
+          "currentPath": "src/types.ts",
+          "targetPath": "src/entities/product/model/product.ts",
+          "layer": "entities",
+          "slice": "product",
+          "reason": "Product domain representation",
+          "risk": "low",
+          "consumers": [
+            "src/Catalog.tsx"
+          ],
+          "routeImpact": "/catalog unchanged",
+          "verification": [
+            "lint",
+            "typecheck",
+            "build",
+            "runtime"
+          ]
+        },
+        {
+          "currentPath": "src/api.ts",
+          "targetPath": "src/entities/product/api/fetch-products.ts",
+          "layer": "entities",
+          "slice": "product",
+          "reason": "Product API ownership",
+          "risk": "medium",
+          "consumers": [
+            "src/Catalog.tsx"
+          ],
+          "routeImpact": "/api/products unchanged",
+          "verification": [
+            "runtime API success/failure"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "catalog",
+      "entries": [
+        {
+          "currentPath": "src/cart.ts",
+          "targetPath": "src/features/add-product/model/add-product.ts",
+          "layer": "features",
+          "slice": "add-product",
+          "reason": "User action",
+          "risk": "medium",
+          "consumers": [
+            "src/pages/catalog/ui/CatalogPage.tsx"
+          ],
+          "routeImpact": "Cart increment behavior unchanged",
+          "verification": [
+            "runtime button and state"
+          ]
+        },
+        {
+          "currentPath": "src/Catalog.tsx",
+          "targetPath": "src/pages/catalog/ui/CatalogPage.tsx",
+          "layer": "pages",
+          "slice": "catalog",
+          "reason": "Route composition",
+          "risk": "medium",
+          "consumers": [
+            "src/app/routing/App.tsx"
+          ],
+          "routeImpact": "/catalog and wildcard preserved",
+          "verification": [
+            "runtime routes",
+            "import boundaries",
+            "rollback"
+          ]
+        }
+      ]
+    }
+  ]
+}

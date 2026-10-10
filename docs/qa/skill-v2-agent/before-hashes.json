@@ -1,0 +1,21 @@
+{
+  "react-cart/package.json": "ef4ae1bce5fc53e9e6fcc761e778424543fa1e2db1e68f76cf768019f3909673",
+  "react-cart/src/app/App.tsx": "caa62d06f1d821e6b51a1bff43f3b2cf726b6b96d6173bc345591930cf49412a",
+  "react-cart/src/features/cart/index.ts": "f1bfe963f5aff27545ee63f414fb4055b56cb4789686bc4a7e8b2ce2d9de902f",
+  "react-cart/src/features/cart/ui/CartView.tsx": "d7c9e5d350c60a4413fbc2535f85022e83ea2d24ccf83fd900711511c27bd642",
+  "react-cart/tsconfig.json": "714a61eaa802c268016b8d8287bf99c5d266811e0c223fad2d740855bf188bf5",
+  "next-review/package.json": "bd7c5632a7af0eaae064135c98fecf252e5ed478f587567f84cacebac5a4067d",
+  "next-review/src/app/catalog/page.tsx": "92b55a49348adec908d6a3ad1ab9b0fa2abe487746a7b13e80c309926be6443d",
+  "next-review/src/app/layout.tsx": "86ce2bfba437bcc96fc1aeb39b9a2c434fdda261a0aae95bf21c448b2eb1b964",
+  "next-review/src/entities/product/index.ts": "036e9b7ec3e8769a686e5f3bb786f4194b686eaa57131ec270dc4f98b94ee5de",
+  "next-review/src/entities/product/model/types.ts": "f3c925fc4cadf235e0df98802c4c0e38abf6c58abc931d8c2f44d25b114ad738",
+  "next-review/src/entities/product/ui/ProductCard.tsx": "a8dee52f493bd6deba1d4b47c70cfd7198b8e6489046b2ab0dbf658fbbc46ee3",
+  "next-review/src/screens/catalog/index.ts": "f39c417c564908f84b2778f5458098e5a90300376b1a1f83dc1c6f28c11a42be",
+  "next-review/src/screens/catalog/ui/CatalogScreen.tsx": "555774f656986d89c14b95f15a406f3e56a7a7221b0d95b7ec3438f4479c3e3e",
+  "next-review/tsconfig.json": "799748ae4c83c7767bd3f14629ea4d6d3d81b208a26260310ae422ff24185f90",
+  "classification/src/entities/product/model/types.ts": "66efe212e33617fccc467d3254542d47dbb922716bbdac79812bb75335f7eb8b",
+  "classification/src/features/add-product-to-cart/model/addProductToCart.ts": "e2937536cc4f6826100a17a342ab59124f1ec01818ed8980324086776d27dbcb",
+  "classification/src/screens/catalog/ui/actions.ts": "cc58c0969e6bd4b763f071a77c753dda52f7c40af9423b74ac91c2f5b291975e",
+  "classification/src/screens/product/ui/actions.ts": "d77f5e773386000c940f3fe3d83d76c641386059f5183cb8d2a0bb2903c92bab",
+  "classification/src/shared/ui/Button.tsx": "5544b7ef44c63734b94f28254f68ef3cf5287f1488038b32bc33ac0a7cdb73e7"
+}

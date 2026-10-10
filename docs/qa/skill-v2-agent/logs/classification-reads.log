@@ -1,0 +1,17 @@
+src/entities/product/model/types.ts
+export type ProductDto = { id: string; name: string; price: number };
+
+src/features/add-product-to-cart/model/addProductToCart.ts
+export function addProductToCart(productId: string, cart: {add(id:string): void}) { cart.add(productId); }
+
+src/screens/catalog/ui/actions.ts
+import { addProductToCart } from '../../../features/add-product-to-cart/model/addProductToCart';
+export const catalogAction = addProductToCart;
+
+src/screens/product/ui/actions.ts
+import { addProductToCart } from '../../../features/add-product-to-cart/model/addProductToCart';
+export const productAction = addProductToCart;
+
+src/shared/ui/Button.tsx
+export function Button({label,onClick}: {label:string;onClick():void}) { return <button onClick={onClick}>{label}</button>; }
+
