@@ -2,7 +2,7 @@
 
 | Symptom | Inspect first | Avoid |
 | --- | --- | --- |
-| Unknown flag | selected CLI version/help and command gate | retrying candidate flags on npm2.6.1 |
+| Unknown flag | selected CLI version/help and the 2.7.0+ markers in commands.md | retrying newer flags on an older installation |
 | Wrong root | target package, aliases, routes and workspaces | choosing repository parent by default |
 | Existing slice | changed paths and user intent | automatic --force |
 | Upgrade conflict | ownership hash and customized file | manifest adoption or res-scaffold |

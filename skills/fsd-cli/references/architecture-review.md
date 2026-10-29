@@ -16,7 +16,7 @@ rules before classifying an exception as a defect.
 
 check/doctor inspect CLI configuration/layers/toolchain; they do not prove correct
 FSD imports. Run the installed project's Steiger with its configured rules. The
-new CLI --architecture wrapper is candidate-only; older installations can run their
+CLI `check --architecture` (2.7.0+) runs it; older installations can run their
 local Steiger directly. Do not automatically download an unpinned package or disable
 rules to make a result green. Missing lint configuration limits conclusions.
 

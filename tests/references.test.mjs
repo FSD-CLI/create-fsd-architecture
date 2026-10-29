@@ -22,5 +22,5 @@ test("release and skill version metadata agree",()=>{
   const release=JSON.parse(fs.readFileSync(path.join(root,"skills/fsd-cli/release.json"),"utf8"));
   assert.equal(release.version,"2.0.0");
   assert(fs.readFileSync(path.join(root,"skills/fsd-cli/SKILL.md"),"utf8").includes(`version: "${release.version}"`));
-  assert.equal(release.cliBaseline,"2.6.1");assert(release.unverified.length>0);
+  assert.equal(release.cliBaseline,"2.7.1");assert.equal(release.candidateCliCommit,undefined);assert(release.unverified.length>0);
 });
