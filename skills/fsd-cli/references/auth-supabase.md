@@ -2,12 +2,13 @@
 
 ## Capability gate
 
-Published CLI 2.6.1 generates auth UI/schema and example integration endpoints.
-Supabase --auth-provider belongs to CLI candidate d5a0bb1, not to that artifact.
-Read commands.md and actual --help before choosing a flag. Selecting Skill v2
-never installs a different CLI or grants backend access.
+CLI `-g feature auth` generates auth UI/schema and example integration endpoints.
+`--auth-provider supabase` exists in CLI 2.7.0 and later and is in preview: live
+Supabase end-to-end acceptance is still pending. Read commands.md and actual
+--help before choosing a flag. Selecting this skill never installs a different
+CLI or grants backend access.
 
-The candidate writes an adapter into the auth slice, without installing SDKs,
+The adapter is written into the auth slice, without installing SDKs,
 provisioning a Supabase project or editing env files. Actual SDK2.117.2 requires
 Node >=22; recheck the chosen SDK engine. CLI runtime and application engines
 are different contracts.

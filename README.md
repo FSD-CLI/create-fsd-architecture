@@ -56,7 +56,7 @@ The tag can be installed before the candidate branch merges; an unpinned install
 still follows main. See [changelog](CHANGELOG.md) and
 [v2 validation scope](docs/qa/SKILL-V2-VALIDATION.md).
 
-- CLI contract rechecked against published `create-fsd-architecture@2.6.1` on 2026-10-06.
+- CLI contract rechecked against published `create-fsd-architecture@2.7.1` on 2026-10-29 (unreleased on `main`; the `v2.0.0` tag still describes 2.6.1).
 - Published-package create, generate, doctor/check and generated builds passed
   locally for React/Vite and Next.js with npm on macOS. This does not verify
   every framework, package manager or agent integration.

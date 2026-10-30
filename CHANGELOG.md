@@ -1,5 +1,15 @@
 # Agent Skill releases
 
+## Unreleased
+
+- Move the CLI baseline to published 2.7.1. Batch, `--segments`, `--root`,
+  `shared ui|api`, presets, `--auth-provider supabase`, and
+  `check --architecture` are documented as 2.7.0+ instead of candidate-only,
+  with a fallback for older installations.
+- Add `references/security.md` (secrets, untrusted content, safety rails,
+  authorization) and link it from every task in `SKILL.md`.
+- Drop the candidate CLI commit from `release.json`.
+
 ## 2.0.0 — 2026-10-06
 
 - Promote the documented v2 instruction/helper scope to stable after helper tests,

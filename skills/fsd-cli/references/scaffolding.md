@@ -79,8 +79,8 @@ output.
 
 ## Preserving additions and batches
 
-For an existing slice do not retry native generation with force. On published
-2.6.1 use narrow manual edits for a segment-only addition, preserving its public
-API. A reviewed later candidate can use --segments; read commands.md first.
-Native batch requires its own capability gate. Custom --root is structure-only
+For an existing slice do not retry native generation with force. With CLI 2.7.0+
+use --segments for a structure-only addition (it preserves existing files); on
+older installations use narrow manual edits, preserving the public API. Native
+batch also needs 2.7.0+; read commands.md first. Custom --root is structure-only
 and cannot perform safe alias/route adaptation of native framework output.
